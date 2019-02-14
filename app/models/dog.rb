@@ -1,13 +1,12 @@
 class Dog
 
-  attr_reader :breed
-  attr_accessor :name, :age
+  attr_accessor :name, :breed :age
 
   @@all
 
-  def initalize(breed, name, age)
-    @breed = breed
+  def initalize( name, breed, age)
     @name = name
+    @breed = breed
     @age = age
     @@all << self
   end
@@ -15,5 +14,5 @@ class Dog
   def self.all
     @@all
   end
-  
+
 end
